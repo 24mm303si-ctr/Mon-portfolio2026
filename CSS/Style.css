@@ -16,7 +16,7 @@ body{
 }
  header{
     background-color:white;
-    box-shadow: 2px 6px 10 px rgba(0, 0, 0, 0);
+    box-shadow: 2px 6px 10 px rgba(0, 0, 0, 0, 05);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -28,7 +28,7 @@ body{
     }
 header div a{
     text-decoration: none;
-    font-size: 2,2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: var(--violet-doux);
 } 
@@ -59,7 +59,7 @@ ul li a::after {
     bottom: 0;
     height: 3px;
     background-color: var(--violet-doux);
-    transition: width 0,3s ease-in-out;
+    transition: width 0,3s ease;
 }
 ul li a:hover::after {
     width: 100%;
@@ -72,3 +72,97 @@ a.active:hover::after{
      background-color: var(--violet-doux);
       width: 100%;
 }
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
+.hero img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-doux);
+}
+.hero h1{
+    color: var(--violet-fonce);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1,2rem;
+}
+.hero p{
+    color: var(--gris-foncee);
+    font-size: 1,3rem;
+    margin-bottom: 1,2rem;
+}
+
+.hero a{ 
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1,1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: backround-color 0,3s ease, transform 0,25s ease;
+}
+
+.hero a:hover{
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+
+.appropos{
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+.appropos h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.appropos h2::after {
+    content:'';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;  
+}
+.appropos p{
+    margin-bottom: 2rem;
+    color: var(--gris-foncee);
+    font-size: 1,3re;;
+}
+
+
+.compétences h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.compétences h2::after {
+    content:'';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;  
+}
+
