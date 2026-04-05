@@ -10,19 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 </head>
 
 <body>
     <header>
 
         <div>
-            <h3><a href="#">Mon portfolio</a></h3>
+            <h3><a href="#">Mes projets </a></h3>
         </div>
 
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="../Mon portfolio2026/projects.html">Projets</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="../Mon portfolio2026/projects.html" class="active">Projets</a></li>
                 <li><a href="../Mon portfolio2026/passion.html">passions</a></li>
                 <li><a href="../Mon portfolio2026/divertissement.html">divertissement</a></li>
                 <li><a href="../Mon portfolio2026/contact.html">Contact</a></li>
@@ -30,16 +32,118 @@
         </nav>
         </header>
         <main>
-            <h1> voici mes  projects</h1>
+            <h1></h1>
+        <section class="realisations">
+            <h2>Mes Réalisations</h2>
+            <div class="underline"></div>
+
+            <div class="grid-projets">
+                <div class="carte">
+                    <img src="Image/site ecom.jpg" Site E-commerce">
+                    <div class="carte-contenu">
+                        <h3>Site E-commerce</h3>
+                        <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <img src="Image/gestion de t.jpg" alt="Gestionnaire de Tâches">
+                    <div class="carte-contenu">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="carte-footer">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <img src="Image/Beyond Blogging_ Actionable Tips for What to Do Next.jpg" alt="Blog Personnel">
+                    <div class="carte-contenu">
+                        <h3>Blog Personnel</h3>
+                        <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="carte-footer">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <span class="statut"><i class="far fa-clock"></i> Bientôt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <img src="Image/Visualizing Customer Insights with Power BI Dashboards.jpg" alt="Dashboard d'Analyse">
+                    <div class="carte-contenu">
+                        <h3>Dashboard d'Analyse</h3>
+                        <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Data</span>
+                        </div>
+                        <div class="carte-footer">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <img src="Image/app meteo.jpg" alt="Application Météo">
+                    <div class="carte-contenu">
+                        <h3>Application Météo</h3>
+                        <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="carte-footer">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <img src="Image/Smorodina _ Mobile App Wireframes.jpg" alt="Maquette Mobile UI">
+                    <div class="carte-contenu">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>Design</span>
+                        </div>
+                        <div class="carte-footer">
+                            <a href="#"><i class="fab fa-figma"></i> Design</a>
+                            <a href="#"><i class="far fa-eye"></i> Aperçu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
-    
-    <footer>
+        <footer>
         <p>© 2026 Muya Misao. Tous droits réservés.</p>
         <p>
-            <a href="#">LinkedIn</a> 
-            <a href="#">GitHub</a>  
-            <a href="#">X</a>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>     
     </footer>
-</body>
-</html>
+
+    
+    </body>
+    </html>
+
