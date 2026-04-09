@@ -3,43 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <!--foot Awesome-->
-    <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="https://cdmjs.cloudflare.com/ajax/libs/font-6.5.0/CSS/all.main.CSS">
+    <title>Mon portfolio - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 
 <body>
     <header>
-
         <div>
             <h3><a href="#">Mon portfolio</a></h3>
         </div>
-
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="projects.html">Projets</a></li>
-                <li><a href="passion.html">passions</a></li>
-                <li><a href="divertissement.html">divertissement</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="passion.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
-        <h1>Contacter nous </h1>
+
+    <main class="page-contact">
+        <section class="conteneur-contact">
+            <div class="infos-contact">
+                <h2>Discutons de votre projet</h2>
+                <p>Je suis disponible pour de nouvelles opportunités. N'hésitez pas à m'écrire !</p>
+                
+                <ul class="coordonnees">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Basé à Lubumbashi, RDC</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>
+                            <a href="https://wa.me/243897572573" target="_blank" rel="noopener noreferrer">
+                                +243 897 572 573
+                            </a> (Aussi sur WhatsApp)
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="formulaire-contact">
+                <form action="#" method="POST">
+                    <div class="groupe-champ">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                    </div>
+                    
+                    <div class="groupe-champ">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-envoyer">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
     </main>
         
     <footer>
         <p>© 2026 Muya Misao. Tous droits réservés.</p>
         <p>
-            <a href="#">LinkedIn</a> 
-            <a href="#">GitHub</a>  
-            <a href="#">X</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="#"><i class="fa-brands fa-github"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>     
     </footer>
 </body>
