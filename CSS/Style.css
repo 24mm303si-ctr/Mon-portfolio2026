@@ -541,3 +541,234 @@ nav a.active {
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
+
+
+
+/* --- Page Divertissements --- */
+.page-divertissement {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.entete-section {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.entete-section h2 {
+    color: var(--violet-fonce);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.entete-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+}
+
+.entete-section p {
+    color: var(--gris-foncee);
+    font-size: 1.2rem;
+}
+
+.conteneur-divertissements {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Espacement entre chaque carte */
+}
+
+/* Carte individuelle */
+.divertissement-carte {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative; /* Nécessaire pour positionner le tag ovale */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol (comme les projets) */
+.divertissement-carte:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Image */
+.div-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.div-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid var(--gris-claire);
+}
+
+/* Section Texte (à droite) */
+.div-texte {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column; /* Aligne le texte et le badge de haut en bas */
+    justify-content: center; /* Centre le contenu verticalement par rapport à l'image */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    gap: 1.5rem; /* Ajoute de l'espace entre le paragraphe et l'ovale */
+}
+
+.div-texte p {
+    color: var(--gris-foncee);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Le titre dans la forme ovale (Maintenant en dessous du texte) */
+.tag-ovale {
+    background-color: var(--Orange-vif);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(245, 167, 22, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    /* Nous avons retiré le position: absolute pour qu'il suive le flux normal */
+}
+
+
+/* --- Page Passions --- */
+.page-passion {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.conteneur-passions {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Carte individuelle Passions */
+.passion-carte {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-carte:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* On réutilise les classes de structure internes (.div-image, .div-texte, .tag-ovale) 
+   qui ont déjà été définies dans la partie Divertissement. 
+   Tu n'as pas besoin de les redéfinir ici ! Cela allège ton code CSS. */
+
+
+   /* --- Page Passions (Style Grille & Dégradé) --- */
+.page-passion {
+    max-width: 1200px; /* Plus large pour accueillir la grille */
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.grid-passions {
+    display: grid;
+    /* Colonnes un peu plus larges (350px min) que la page projets (300px) */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.carte-passion {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden; /* Garde l'image et le badge à l'intérieur des coins arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-passion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.passion-image-container {
+    position: relative;
+    height: 280px; /* Image plus grande */
+    width: 100%;
+}
+
+.passion-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Le dégradé du bas vers le haut appliqué sur l'image */
+.passion-image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dégradé de ton violet vers transparent */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    pointer-events: none; /* Empêche le dégradé de bloquer les clics */
+}
+
+/* Le badge orange en haut à droite */
+.tag-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--Orange-vif);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* S'assure qu'il est au-dessus du dégradé */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.passion-texte {
+    padding: 2.5rem; /* Espace interne plus généreux */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.passion-texte p {
+    color: var(--gris-foncee);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 0;
+}

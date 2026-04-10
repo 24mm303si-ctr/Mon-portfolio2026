@@ -10,36 +10,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
+</head>
 <body>
     <header>
-
         <div>
             <h3><a href="#">Mon portfolio</a></h3>
         </div>
-
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="../Mon portfolio2026/projects.html">Projets</a></li>
-                <li><a href="../Mon portfolio2026/passion.html">passions</a></li>
-                <li><a href="../Mon portfolio2026/divertissement.html">divertissement</a></li>
-                <li><a href="../Mon portfolio2026/contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="passion.html">Passions</a></li>
+                <li><a href="divertissement.html"  class="active">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-   <main>
-     <h1> voici mes divertissement</h1>
-   </main>
+   <main class="page-divertissement">
+        <div class="entete-section">
+            <h2>Mes Divertissements</h2>
+            <p>Ce que j'aime faire pour me détendre et stimuler ma créativité.</p>
+        </div>
+
+        <div class="conteneur-divertissements">
+            
+            <article class="divertissement-carte">
+                <div class="div-image">
+                    <img src="Image/foot2.jpg" alt="Terrain de football">
+                </div>
+                <div class="div-texte">
+                    <p>Passionné par le football, j'aime suivre les grands championnats et jouer lors de mon temps libre. C'est un sport dynamique qui m'enseigne l'esprit d'équipe, la cohésion et le dépassement de soi, des valeurs que j'applique aussi dans mes projets informatiques.</p>
+                    <div class="tag-ovale"><i class="fa-regular fa-futbol"></i> Football</div>
+                </div>
+            </article>
+
+            <article class="divertissement-carte">
+                <div class="div-image">
+                    <img src="Image/mangas.jpg" alt="Collection de mangas">
+                </div>
+                <div class="div-texte">
+                    <p>Grand lecteur de mangas, je suis fasciné par la richesse des univers, la complexité des intrigues et le style artistique unique de ces œuvres. Cette passion nourrit constamment mon imagination et mon sens du design graphique.</p>
+                    <div class="tag-ovale"><i class="fa-solid fa-book-open"></i> Mangas</div>
+                </div>
+            </article>
+
+            <article class="divertissement-carte">
+                <div class="div-image">
+                    <img src="Image/echec.jpg" alt="Plateau d'échecs">
+                </div>
+                <div class="div-texte">
+                    <p>Jeu de stratégie par excellence, les échecs sont pour moi un excellent moyen de garder mon esprit vif. Ce jeu m'aide à développer ma réflexion logique, ma capacité d'anticipation et ma résolution de problèmes (des compétences très utiles pour coder !).</p>
+                    <div class="tag-ovale"><i class="fa-solid fa-chess-knight"></i> Échecs</div>
+                </div>
+            </article>
+
+            <article class="divertissement-carte">
+                <div class="div-image">
+                    <img src="Image/musique.jpg" alt="Casque audio et musique">
+                </div>
+                <div class="div-texte">
+                    <p>La musique est mon échappatoire au quotidien. Que ce soit pour m'isoler et me concentrer intensément pendant une session de développement web, ou simplement pour me relaxer après une longue journée d'études, elle m'accompagne partout.</p>
+                    <div class="tag-ovale"><i class="fa-solid fa-music"></i> Musique</div>
+                </div>
+            </article>
+
+        </div>
+    </main>
     
     <footer>
         <p>© 2026 Muya Misao. Tous droits réservés.</p>
         <p>
-            <a href="#">LinkedIn</a> 
-            <a href="#">GitHub</a>  
-            <a href="#">X</a>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>     
     </footer>
 </body>

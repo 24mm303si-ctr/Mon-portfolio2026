@@ -10,36 +10,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
+</head>
 <body>
-    <header>
-
+     <header>
         <div>
             <h3><a href="#">Mon portfolio</a></h3>
         </div>
-
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="../Mon portfolio2026/projects.html">Projets</a></li>
-                <li><a href="../Mon portfolio2026/passion.html">passions</a></li>
-                <li><a href="../Mon portfolio2026/divertissement.html">divertissement</a></li>
-                <li><a href="../Mon portfolio2026/contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html" >Projets</a></li>
+                <li><a href="passion.html" class="active">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
-        <h1> voici mes passion </h1>
+  <main class="page-passion">
+        <div class="entete-section">
+            <h2>Mes Passions</h2>
+            <p>Les domaines qui me fascinent et dans lesquels je m'investis au quotidien.</p>
+        </div>
+
+        <div class="grid-passions">
+            
+            <article class="carte-passion">
+                <div class="passion-image-container">
+                    <img src="Image/devweb.jpg" alt="Écran avec du code">
+                    <div class="tag-top-right"><i class="fa-solid fa-code"></i> Dév. Web</div>
+                </div>
+                <div class="passion-texte">
+                    <p>Le développement web est bien plus qu'une simple discipline pour moi, c'est une véritable vocation. J'adore la logique du code et la magie de transformer des lignes de texte abstraites en interfaces interactives et esthétiques accessibles à tous sur internet.</p>
+                </div>
+            </article>
+
+            <article class="carte-passion">
+                <div class="passion-image-container">
+                    <img src="Image/ia.jpg" alt="Cerveau artificiel et données">
+                    <div class="tag-top-right"><i class="fa-solid fa-brain"></i> IA</div>
+                </div>
+                <div class="passion-texte">
+                    <p>Je suis fasciné par les capacités grandissantes de l'Intelligence Artificielle. Comprendre comment les machines peuvent apprendre, analyser des données massives et résoudre des problèmes complexes est un défi intellectuel qui me pousse à faire de nombreuses recherches.</p>
+                </div>
+            </article>
+
+            <article class="carte-passion">
+                <div class="passion-image-container">
+                    <img src="Image/design.jpg" alt="Tablette graphique et design">
+                    <div class="tag-top-right"><i class="fa-solid fa-palette"></i> Design</div>
+                </div>
+                <div class="passion-texte">
+                    <p>Pour moi, la fonctionnalité doit toujours s'accompagner d'une belle esthétique. Le design graphique me permet d'exprimer ma créativité tout en réfléchissant à l'expérience utilisateur (UX/UI). J'aime concevoir des maquettes propres et modernes avant de les coder.</p>
+                </div>
+            </article>
+
+        </div>
     </main>
     
     <footer>
         <p>© 2026 Muya Misao. Tous droits réservés.</p>
         <p>
-            <a href="#">LinkedIn</a> 
-            <a href="#">GitHub</a>  
-            <a href="#">X</a>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>     
     </footer>
 </body>
